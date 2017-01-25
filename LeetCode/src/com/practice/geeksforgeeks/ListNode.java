@@ -13,9 +13,18 @@ public class ListNode {
 			return;
 		}
 		ListNode p = head;
-		while(p.next != null){
-			System.out.println(p.val);
+		while(p != null){
+			System.out.print(p.val + " ");
 			p = p.next;
 		}
+	}
+	
+	public static ListNode getList(){
+		ListNode head = new ListNode(3);
+		head.next = new ListNode(5);
+		head.next.next = new ListNode(7);
+		head.next.next.next = new ListNode(9);
+		head.next.next.next.next = new ListNode(11);
+		return head;
 	}
 }
